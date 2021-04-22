@@ -1,6 +1,8 @@
 package com.cetis108.semana08
 
-class Autor {
+import java.io.Serializable
+
+class Autor: Serializable {
     var Id: Int? = null
     var Nombre: String? = null
     var Nacionalidad: String? = null

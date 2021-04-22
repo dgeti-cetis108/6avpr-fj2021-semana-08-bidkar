@@ -29,11 +29,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/btnMainThird"
+        android:onClick="mostrarLibro"
+        android:id="@+id/btnMainLibro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
-        android:text="Go to third"
+        android:text="Ir a Libro"
         app:layout_constraintEnd_toEndOf="@+id/btnMainSecond"
         app:layout_constraintStart_toStartOf="@+id/btnMainSecond"
         app:layout_constraintTop_toBottomOf="@+id/btnMainSecond" />

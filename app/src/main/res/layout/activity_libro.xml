@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibroActivity">
+
+    <TextView
+        android:id="@+id/tvLibroId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="78dp"
+        android:text="Id"
+        app:layout_constraintStart_toStartOf="@+id/tvLibroTitulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLibroTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Titulo"
+        app:layout_constraintStart_toStartOf="@+id/tvLibroEdicion"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibroId" />
+
+    <TextView
+        android:id="@+id/tvLibroEdicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Edición"
+        app:layout_constraintStart_toStartOf="@+id/tvLibroNumeroDePagina"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibroTitulo" />
+
+    <TextView
+        android:id="@+id/tvLibroNumeroDePagina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Número de páginas"
+        app:layout_constraintStart_toStartOf="@+id/tvLibroIdioma"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibroEdicion" />
+
+    <TextView
+        android:id="@+id/tvLibroIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Idioma"
+        app:layout_constraintStart_toStartOf="@+id/tvLibroAutores"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibroNumeroDePagina" />
+
+    <TextView
+        android:id="@+id/tvLibroAutores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:text="Autores"
+        app:layout_constraintStart_toStartOf="@+id/tvLibroEditorial"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibroIdioma" />
+
+    <TextView
+        android:id="@+id/tvLibroEditorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="55dp"
+        android:text="Editorial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLibroAutores" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
