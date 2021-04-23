@@ -53,7 +53,9 @@ class MainActivity : AppCompatActivity() {
             Editorial = editorial1
         }
 
+        // crear intent para llamar a LibroActivity
         val intent = Intent(this, LibroActivity::class.java)
+        // pasar el objeto libro previamente creado
         intent.putExtra("libro", libro)
         startActivity(intent)
     }
